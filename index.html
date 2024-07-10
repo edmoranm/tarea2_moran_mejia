@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Dinámico</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+#input-container {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+}
+
+button[type="button"]:hover {
+  background-color: #0077A3;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Formulario Dinámico</h2>
+  <form id="dynamic-form">
+    <div id="input-container">
+     
+    </div>
+    <button type="button" id="add-input">Agregar Input</button>
+    <button type="button" id="remove-input">Eliminar Último Input</button>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
